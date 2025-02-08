@@ -58,14 +58,14 @@ body {
     margin: 0
 }
 .header-wrap,
-.hero-wrap,
-.product-wrap {
+.hero-wrap{
     max-width: 1024px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
 }
+
 header {
     background-color: var(--dark-background);
     color: #F9FAF8;
@@ -129,6 +129,10 @@ header .nav ul a {
 #product {
     padding: 60px 0;
     text-align: center;
+}
+.product-wrap {
+    max-width: 1024px;
+    margin: 0 auto;
 }
 #product h2 {
     margin-bottom: 30px;
