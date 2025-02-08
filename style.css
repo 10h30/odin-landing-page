@@ -1,21 +1,69 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+
+
 :root {
     --dark-background: #1F2937;
 }
 body {
     font-family: Roboto;
+    margin: 0
 }
 header {
     background-color: var(--dark-background);
     color: #F9FAF8;
-    padding: 10px 40px;
-}
-.content-wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 80%;
-    margin: 0 auto;
+    padding: 20px 40px;
 }
 
 header .logo {
@@ -31,10 +79,79 @@ header .nav ul {
 .hero {
     background-color: var(--dark-background);
     color: #F9FAF8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    color: #F9FAF8;
+    font-weight: 900;
+}
+.button {
+    background-color: #3882F6;
+    color: #FFF;
+    text-decoration: none;
+    padding: 5px 20px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.button.alt {
+    background-color: transparent;
+    border: 1px solid #FFF;
+}
+
+.hero div {
+    flex: 1;
+}
+
+.product {
+    padding: 40px;
+    text-align: center;
+}
+
+.product-loop {
+    display: flex;
+}
+.product-loop div {
+    flex: 1;
+}
+.quote {
+    background: #e5e7eb;
+    padding: 40px;
+    font-size: 36px;
+    color: #1F2937;
+    font-style: italic;
+    font-weight: 300;
+}
+
+cite {
+    font-size: 18px;
+    display: block;
+    text-align: right;
+    font-weight: 600;
+}
+
+.call-to-action {
+    padding: 40px;
+}
+
+.call-to-action .blue-box {
+    background-color: #3882F6;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #FFF
 }
 
 footer {
     background-color: var(--dark-background);
     color: #F9FAF8;
     padding: 10px 40px;
+    text-align: center;
 }
