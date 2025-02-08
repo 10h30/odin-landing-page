@@ -57,12 +57,16 @@ body {
     font-family: Roboto;
     margin: 0
 }
-header {
-    background-color: var(--dark-background);
-    color: #F9FAF8;
+.header-wrap,
+.hero-wrap {
+    max-width: 1024px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+header {
+    background-color: var(--dark-background);
+    color: #F9FAF8;
     padding: 20px 40px;
 }
 
@@ -76,7 +80,12 @@ header .nav ul {
     gap: 20px
 }
 
-.hero {
+header .nav ul a {
+    color: #e5e7eb;
+    font-size: 18px;
+    text-decoration: none;
+}
+#hero {
     background-color: var(--dark-background);
     color: #F9FAF8;
     display: flex;
@@ -85,10 +94,16 @@ header .nav ul {
     padding: 40px;
 }
 
-.hero h1 {
+#hero h1 {
     font-size: 48px;
     color: #F9FAF8;
     font-weight: 900;
+}
+
+#hero p {
+    color: #e5e7eb;
+    font-size: 18px;
+
 }
 .button {
     background-color: #3882F6;
@@ -105,13 +120,16 @@ header .nav ul {
     border: 1px solid #FFF;
 }
 
-.hero div {
+#hero div {
     flex: 1;
 }
 
-.product {
-    padding: 40px;
+#product {
+    padding: 60px 0;
     text-align: center;
+}
+#product h2 {
+    margin-bottom: 30px;
 }
 
 .product-loop {
@@ -120,13 +138,16 @@ header .nav ul {
 .product-loop div {
     flex: 1;
 }
-.quote {
+#quote {
     background: #e5e7eb;
-    padding: 40px;
     font-size: 36px;
     color: #1F2937;
     font-style: italic;
     font-weight: 300;
+}
+.quote-wrap {
+    max-width: 900px;
+    padding: 60px 40px;
 }
 
 cite {
@@ -136,11 +157,11 @@ cite {
     font-weight: 600;
 }
 
-.call-to-action {
+#cta {
     padding: 40px;
 }
 
-.call-to-action .blue-box {
+#cta .blue-box {
     background-color: #3882F6;
     padding: 20px;
     display: flex;
@@ -152,6 +173,7 @@ cite {
 footer {
     background-color: var(--dark-background);
     color: #F9FAF8;
-    padding: 10px 40px;
+    padding: 20px 40px;
     text-align: center;
+
 }
