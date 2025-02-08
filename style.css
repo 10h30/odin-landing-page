@@ -58,7 +58,8 @@ body {
     margin: 0
 }
 .header-wrap,
-.hero-wrap {
+.hero-wrap,
+.product-wrap {
     max-width: 1024px;
     display: flex;
     justify-content: space-between;
@@ -149,6 +150,7 @@ header .nav ul a {
 .quote-wrap {
     max-width: 900px;
     padding: 60px 40px;
+    margin: 0 auto;
 }
 
 cite {
