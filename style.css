@@ -63,6 +63,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 0 auto;
 }
 header {
     background-color: var(--dark-background);
@@ -163,11 +164,12 @@ cite {
 
 #cta .blue-box {
     background-color: #3882F6;
-    padding: 20px;
+    color: #FFF;
+    max-width: 1024px;
+    padding: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: #FFF
 }
 
 footer {
